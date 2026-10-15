@@ -1,6 +1,10 @@
-# RepoGraph
+<p align="center">
+  <img src="assets/logo.svg" alt="RepoGraph logo" width="120">
+</p>
 
-> AI-powered GitHub repository explainer with Graph RAG chat
+<h1 align="center">RepoGraph</h1>
+
+<p align="center"><em>AI-powered GitHub repository explainer with Graph RAG chat</em></p>
 
 RepoGraph analyzes any public GitHub repository and generates a structured technical tutorial. It then builds a knowledge graph from the codebase and lets you chat with it using a hybrid Graph RAG pipeline combining Neo4j, Qdrant, and the OpenAI Agents SDK.
 
@@ -155,6 +159,9 @@ RepoGraph/
 ├── save_as_pdf.py            # PDF generation (returns bytes)
 ├── Qdrant_db.py              # store_in_Qdrant helper
 ├── chunk_ast.py              # Tree-sitter based code chunking
+│
+├── assets/
+│   └── logo.svg              # RepoGraph logo (used in this README)
 │
 ├── Chat_logic/
 │   ├── Chat.py               # Chat agent + get_answer generator
