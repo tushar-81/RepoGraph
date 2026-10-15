@@ -100,7 +100,7 @@ async def download_pdf(session_id: str):
         return Response(
             content=pdf_bytes,
             media_type='application/pdf',
-            headers={'Content-Disposition': 'attachment; filename="repo.pdf"'}
+            headers={'Content-Disposition': 'attachment; filename="repograph-report.pdf"'}
         )
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
