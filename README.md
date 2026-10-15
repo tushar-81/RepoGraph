@@ -1,13 +1,13 @@
-# RepoLens
+# RepoGraph
 
 > AI-powered GitHub repository explainer with Graph RAG chat
 
-RepoLens analyzes any public GitHub repository and generates a structured technical tutorial. It then builds a knowledge graph from the codebase and lets you chat with it using a hybrid Graph RAG pipeline combining Neo4j, Qdrant, and the OpenAI Agents SDK.
+RepoGraph analyzes any public GitHub repository and generates a structured technical tutorial. It then builds a knowledge graph from the codebase and lets you chat with it using a hybrid Graph RAG pipeline combining Neo4j, Qdrant, and the OpenAI Agents SDK.
 
 ---
 ## Demo
 
-[![RepoLens Demo](image.png)](https://youtu.be/5dfbHOnt3Po)
+[![RepoGraph Demo](image.png)](https://youtu.be/50N_WvJ4Hj4)
 
 ---
 
@@ -83,8 +83,8 @@ User
 ## Installation
 
 ```bash
-git clone https://github.com/your-username/RepoLens.git
-cd RepoLens
+git clone https://github.com/your-username/RepoGraph.git
+cd RepoGraph
 python -m venv myenv
 source myenv/bin/activate  # Windows: myenv\Scripts\activate
 pip install -r requirements.txt
@@ -136,7 +136,7 @@ Click **Analyze Repository**. The parent agent reads the README, maps the file s
 
 **Step 3 — Download PDF**
 
-Click **Download PDF** to get a styled dark-theme PDF of the tutorial.
+Click **Download PDF** to get a styled, RepoGraph-branded PDF of the tutorial.
 
 **Step 4 — Open Chat**
 
@@ -147,7 +147,7 @@ Click **Open Chat**. The app builds a knowledge graph from the Qdrant chunks, st
 ## Project Structure
 
 ```
-RepoLens/
+RepoGraph/
 ├── main.py                   # FastAPI app — routes and WebSocket
 ├── frontend.html             # Single-page UI
 ├── Parent_agent.py           # Parent agent — repo analysis pipeline
@@ -223,8 +223,3 @@ import logging
 logging.getLogger("neo4j.notifications").setLevel(logging.ERROR)
 ```
 
----
-
-## License
-
-MIT
